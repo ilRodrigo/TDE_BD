@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 65.5%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+}
+
+.content {
+    display: grid;
+    grid-template-areas: 
+        ". . . . ."
+        ". hero . form ."
+        ". hero . form ."
+        ". . . . ."
+    ;
+    gap: 8.5rem;
+}
+
+main {
+    grid-area: form;
+}
+
+aside {
+    grid-area: hero;
+}
+
+aside h1{
+    font-size: 8.4rem;
+    font-weight: 500;
+    line-height: 22rem;  
+}
+
+aside h1 span, main h2 span {
+    color: #FF5678;
+}
+
+main {
+    width: 60rem;
+    height: 65rem;
+    border: .1rem solid rgba(0, 0, 0, 0.15);
+    padding: 2.4rem 5.7rem;
+    border-radius: 1.2rem;
+}
+
+main h2{
+    max-width: 44rem;
+    font-size: 3.6rem;
+    font-weight: 500;
+}
+
+main .actions {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.actions label{
+    margin-left: 1rem;
+    font-size: 1.6rem;
+    margin-top: 1.2rem;
+}
+
+.actions input {
+    border-radius: 1.2rem;
+    font-size: 1.4rem;
+    height: 4.5rem;
+    color: #000;
+    margin-top: .4rem;
+    padding: 1.2rem;
+}
+
+#btnCadastra{
+    background-color:#35E6E9;
+    border: 2px solid #C0EBF4;
+    color: #fff;
+    font-size: 2.4rem;
+    margin-top: 3.4rem;
+    cursor: pointer;
+}
+
+.actions a {
+    border-radius: 1.2rem;
+    text-decoration: none;
+    font-size: 2.4rem;
+    height: 3.5rem;
+    background: #FF5678;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.4rem;
+}
